@@ -1,0 +1,52 @@
+1. 
+
+a) SET array ["Vivian", "Ava", "Josh", "Patrick", "Mike"]
+b) array using PUSH on Mary - array.push("Mary");
+c) FUNCTION findJosh
+	CALL array with indexOf and string Josh as a parameter
+END FUNCTION
+d) FUNCTION findEmily
+	CALL array with indexOf and string Emily inside
+END FUNCTION
+
+It returns -1 if it doesn't find the item/person in the array.
+
+e) You would just do this:
+
+Splice onto array and 1(As 1 is where Ava is) to 0 then add "Melissa"
+
+Code looks like this: 
+
+var array = ["Vivian", "Ava", "Josh", "Patrick", "Mike"]
+array.splice(1, 0, "Melissa")
+console.log(array)
+
+f) Splice array with 4 to 1
+
+Like so:
+
+array.splice(4, 1)
+
+2. 
+
+This is my food items at walmart on the conveyor belt.
+	- Line is composed of items, represented as strings.
+	- This line has a front and back.
+	- Items that enter usually get placed in the back.
+	- Items can be taken out whenever needed.
+
+var conveyorBelt = ["Milk", "Tea", "Coffee", "Chips", "Chicken"]
+
+Say I want to add Bread to my shoppingCart. I would do
+
+shoppingCart.push("Bread");
+
+If I want to remove Tea.
+
+shoppingCart.splice(1, 1);
+
+Or if I want to add rice infront of the chicken.
+
+shoppingCart.splice(4, 0, "Rice"); (This is with Tea still in the array)
+
+3. The data structure would allow for delelopers to access and manipulate data pretty easily as seen with some of the commands like .splice, .push, .indexOf, and many more that you can use this lets the developers add/remove data in arrays and this would benefit them because they could manipulate it in many different ways to their needs. 
