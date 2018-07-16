@@ -1,0 +1,45 @@
+Short Answers:
+1. I would say that programmers use pseudocode to make their code easier to read and by that I mean when they want to make something they would first brainstorm and then they would just use pseudocode to write out their brainstorm so then when they are actually writing the code for real they could just look their and easily understand what they wanted to write and do.
+
+2. If you run pseudocode on my computer nothing would happen because the pseudocode is for you to be able to read not for the computer the actually code you will write after this will be for the computer but this is just for you to read so that you can understand something better and it be easier.
+
+Programming Assignment:
+1. 
+FUNCTION greaterNumber first number and second number as parameters
+	IF first number is greater than second
+	  RETURN first number
+	ELSE 
+	  RETURN second number
+	END IF
+END FUNCTION
+
+2. 
+FUNCTION countHundred
+	FOR set i to 0, i is less than 100, i adds 1
+		CALL i
+	END FOR
+END FUNCTION
+
+3.
+SET phoneNumbers to 360, 417, 503
+FUNCTION search with parameter of entry
+	SET filtered equal to phoneNumbers filter for equals to entry
+	IF filtered
+	RETURN filtered
+	END IF
+END FUNCTION
+
+CALL search with arguement
+
+4. 
+
+var phoneNumbers = [360, 417, 503];
+
+function search(entry) {
+  var filtered = phoneNumbers.filter(number => number === entry);
+  if (filtered) {
+    return filtered;
+  }
+}
+
+search();
