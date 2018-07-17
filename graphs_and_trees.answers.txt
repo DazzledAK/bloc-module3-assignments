@@ -1,0 +1,30 @@
+Exercises
+
+1. Well, to start off binary trees have a root node which is the one node that started everything and usually other trees have 2 of whatever or some have 1 as well, binary trees also may have up to 2 child nodes; a left node and a right node but normal trees usually can have many more than just two.
+
+2. heuristics are basically a software engineers use of best guesses. Heuristics are used to guess like how close you are and how far more you'd need to go to a destination for a solution not a perfect one but it'll work. They are also made so that complex problems can be solved soon but by sacrificing accuracy.
+
+3. Another problem could be like solving a rubics cube because it will use a lot of guesses to guess on how to solve it the fastest way and it's pretty unpredictable. Like it would have to check hundreds of ways on which is fastest and just the shortest-path problem it would guess a lot.
+
+4. The difference between these two is the way the search happens like the DFS way first it starts at the root and goes as far as possible on each branch before going back and checking the child nodes when backtracking. On the otherhand, BFS also starts at the tree root but this one checks the first row of nodes than it moves on to the second and checks all of them and etc.
+
+5. An undirected, a-cyclic, unweighted graph is basically a drawing of the letter "A" because undirected means that the middle line in the "A" can go both ways and doesn't have a start or end location, then the a-cyclic part is that the "A" shape isn't forming a loop, and it's an unweighted graph because it doesn't have any cost of travel between the nodes.
+
+6. A binary search tree is a graph that is based on a quantifiable value meaning that nodes are increasing in value when you travel to the right and when going to the left they decrease.
+
+Programming Questions
+
+1. How I would this this problem is that I would write a function called checkForTen and inside use a filter to filter out the nodes and basically see if I can find any node equal to 10.
+
+function checkForTen() {
+  binaryTree.filter(item => item === 10);
+}
+
+2. I am mostly guessing on this as I have no idea how but I will keep trying so I think that you'd need a function with n1 and n2 as parameters than you'd have to make a variable totalDistance and let that have n1 + n2 and return totalDistance.
+
+function findDistance(n1, n2) {
+  var totalDistance = n1 + n2;
+  return totalDistance;
+}
+
+findDistance(2, 3)
