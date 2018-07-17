@@ -1,0 +1,47 @@
+Exercises
+
+1. What is the main difference between a stack and a queue? - The main difference I would say is that a stack uses LIFO and a queue uses FIFO priority.
+
+2. What are the similarities between stacks and queues? - They both use a priority and they are also both data structures. 
+
+3. I feel like the UNDO option would use the queue data structure because the queue data structure stores some request so I would think that it would store everything we type so when we need to undo something we just go back to the item in the order. For the REDO option I think that the stack data structure would be good to use because as in the example above we could push, pop element which if we wanted could probably do the same to REDO option and like push something new or pop something so we can add and that would redo that item or whatever you're trying to redo.
+
+Programming Questions
+
+1. Given a string, reverse it using a stack. For example, the string "Bloc!" should be converted to "!colB".
+
+FUNCTION reverseString(string)
+	RETURN string with split attached on an empty string, with reverse attacked empty, and also join attached with empty strings
+END FUNCTION
+CALL "Bloc!" (Should give !colB)
+
+Code: 
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
+reverseString("Bloc!");
+
+2. Implement the delete functionality of a stack using one queue. Make a FIFO data structure mirror the functionality of a LIFO data structure.
+
+CLASS Stack
+ FUNCTION pop(queue)
+   APPEND queue to the end of the list
+   SET last to the last element
+   REMOVE LAST element of list from list
+   RETURN last
+ END FUNCTION
+END CLASS
+
+3. Fill in the methods for the following Queue class so that it will work as expected (FIFO).
+
+CLASS QUEUE
+ FUNCTION enqueue(element)
+   APPEND element to the end of the list
+ END FUNCTION
+
+ FUNCTION dequeue
+   SET temp to the first element
+   REMVOVE FIRST element of list from list
+   RETURN temp
+ END FUNCTION
+END CLASS
