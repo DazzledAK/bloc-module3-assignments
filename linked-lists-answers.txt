@@ -1,0 +1,70 @@
+Exercises
+
+1. What are some pros and cons of using linked lists instead of arrays? - The pros of using linked lists instead of an array is that you can store much more in a linked list than an array, linked lists can also be stored anywhere there is avaliable memory location unlike arrays which have to be in like a line. The con for linked list are that it's much harder to find exactly what your looking for in a linked list than in an array as you can't index.
+
+2. Come up with a real world example of a linked list. - A linked list is like a scavenger hunt because you have to find a clue to point to another clue till you keep going till the end.
+
+Programming Questions
+
+1. The Linked List push function should take a value, create a node, and add it to the end of a list. Below is a push function for a singly linked list. However, there is something wrong with it. Find the bug and fix the code.
+
+First you would create a push function and then you would create the node variable with properties after that you would create an if else statement and change node to head if it's not existing.
+
+LinkedList.prototype.push = function(element) {
+ SET node = {
+   value: element,
+   next: null
+ }
+
+ IF the head node does exist (took out the not)
+   THEN SET head to node
+ ELSE
+   SET current node to head
+   SET current.next to node
+ }
+}
+
+2. Given an unsorted singly linked list, remove all duplicates from the linked list.
+
+Well this turned out to be really hard! I have asked on slack but didn't get too much help and it's takes around 30 minutes sometimes or more to get an answer. I just found out how to create a LinkedList which wasn't that hard but kind of confusing for a first timer. I couldn't for my life find out how to remove duplicates like I have search so much of google for some help and just couldn't for javascript and the ones that did have something were really confusing and sometimes didn't work. I would really like some help with this. I will redo this but for now just submitted it so that I can later come back because I have been trying since morning.
+
+This is my code for my List: 
+
+function LinkedList() {
+  var length = 0;
+  var head = null;
+
+  var Node = function(element) {
+    this.element = element;
+    this.next = null;
+  }
+
+  this.size = function() {
+    return length;
+  }
+
+  this.head = function() {
+    return head;
+  }
+
+  this.add = function(element) {
+    var node = new Node(element);
+    if(head === null) {
+      head = node;
+    } else {
+      var currentNode = head;
+
+      while(currentNode.next) {
+        currentNode = currentNode.next;
+      }
+      currentNode.next = node;
+    }
+    length++;
+  };
+}
+
+var list = new LinkedList();
+list.add("Kitten")
+list.add("Dog")
+
+Not sure how to do number 2-3 but I will keep trying! Hardest checkpoint I've had so far in all the modules.
