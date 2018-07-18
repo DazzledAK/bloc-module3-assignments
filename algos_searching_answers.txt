@@ -1,0 +1,46 @@
+Short Answer
+
+1. What is a real-life scenario that uses linear search? - A real life scenario that uses the linear search would be something like if you had a car website that listed parts and such you could use linear search for it so that people could find the parts that they are looking for in a list. Usually it's best to use linear search when the list isn't huge.
+
+2. What is a real-life scenario that uses binary search? - A real life scenario that uses the binary search could be an ecommerce website you created that needs to search for cloth and has tons of cloth you could use the binary search algo because it's better suited for when there is a lot of items.
+
+3. Given the alphabetically sorted collection in this checkpoint, how many iterations would it take to find the value G using linear search? - It would have to go through many to get to G as its at the very end. About 6.
+
+4. Given the alphabetically sorted collection in this checkpoint, how many iterations would it take to find the value G using binary search? - It would have to go through many to get to G as its at the very end. About 3.
+
+5. Given an unsorted collection of a million items, which algorithm would you choose between linear search and binary search? Explain your reasoning. - For this one, it's linear search because binary search only works with sorted collections/lists it doesn't work with unsorted lists.
+
+6. Given a sorted collection of a million items, which algorithm would you choose between linear search and binary search? Explain your reasoning. - Well, I would choose the binary search for something like this because big numbers and linear search don't go very well together as imagine if your item was the very last item on that millionth list that would take pretty long to get too. The binary search on the other hand would do it much faster because it would divide and already only have half a million to go through then another iteration and now only 250k and so on till it finds the item. Binary search in my opinion would be much quicker in this scenario for sure.
+
+Programming Assignment
+
+1. You and a friend have set a wager to see who can find the word "Albatross" in the dictionary the fastest. Write a program to allow you to win the bet.
+var linearSearch = function(dictionary, target) {
+  var result = null, value;
+  for(var i = 0; i < dictionary.length; i++) {
+    value = dictionary[i];
+    if(value === target){
+      result = target;
+      break;
+    }
+  }
+  return result;
+};
+
+linearSearch(["Racoon", "Baboon", "Cat", "Dog", "Falcon", "Killer Whale", "Albatross"], "Albatross")
+
+2. You work at a pet store, and a child has asked you to net the only white-spotted goldfish from the fish tank. Write a program that will help you net the right fish.
+
+var linearSearch = function(goldfish, target) {
+  var result = null, value;
+  for(var i = 0; i < goldfish.length; i++) {
+    value = goldfish[i];
+    if(value === target){
+      result = target;
+      break;
+    }
+  }
+  return result;
+};
+
+linearSearch(["White-spotted", "Black-spotted", "Brown-spotted", "Brown", "Grey", "Yellow", "Orange"], "White-spotted")
