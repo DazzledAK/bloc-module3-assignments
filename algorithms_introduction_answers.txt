@@ -1,0 +1,43 @@
+1. 
+
+Making coffee: 
+
+FUNCTION makingCoffee() 
+	Turn machine on
+	Pour the coffee in
+	Put a cup under the spout
+	Press the pour button
+	Turn machine off
+END FUNCTION
+
+Washing dishes: 
+
+FUNCTION washingDishes() 
+	Turn faucet on
+	Soak dish with water
+	Grab a sponge 
+	Pour dish soap on sponge
+	Using circular motions on dish with sponge
+	Rinse dish
+END FUNCTION
+
+Making peanut butter sandwich:
+
+FUNCTION makingPeanutButterSandwich() 
+	grab your bread
+	grab your peanut butter
+	grab a butter knife
+	use knife to scoop peanut butter
+	slather peanut butter on bread
+	put everything away
+END FUNCTION
+
+2. Name three companies who created an algorithm that made them successful.
+
+	A) Youtube - Youtube's case stands out because so many people watch videos they days on youtube and there is practically anything from tutorials to funny videos and what makes it stand out is that when you have watched some videos youtube's algorithm can figure out what to recommend for you like if you've been watching a lot of coding tutorials it will recommend coding tutorials and videos for you.
+
+	B) Amazon - What makes amazon stand out is that it's basically a mall but on a website and their search algorithm for products is amazing you can search almost anything and they use that to search for that specific thing and you can even filter out how much money you want to spend and such.
+
+	C) Facebook - What makes Facebook stand out is that it's a place to chat with friends and find new friends what really makes it stand out is that if you have friends even one then their algorithm recommends friends from your friend for you which is pretty cool and I think that's what made facebook so big because you'll be able to meet new friend this way.
+
+3.  An algorithm is effective if it finishes in a finite amount of time and accomplishs a goal with logical steps for that goal but if the algorithm isn't executed in a finite amount of time with logical steps and doesn't complete the goal then it's considered an inefficent algorithm because it doesn't finish the goal in the time with correct steps.
