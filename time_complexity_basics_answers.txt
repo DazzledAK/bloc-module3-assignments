@@ -1,0 +1,56 @@
+1. Time complexity is something that estimates the time it takes to execute a program expressed using a function. It's relation to algorithms is that algorithms need to be done in a finite amount of time and time complexity basically tries to figure out how much time it takes to execute that algorithm.
+
+2. Runtime is referred as the physical time duration of an algorithm and it's usually used synonymously with time complexity so that an the physical time duration of a algorithm can be found.
+
+3. Well, you have to add up all instructions the algorithm will execute as a function of the size of it's input, then you simplify the expression to the largest term and drop any constants.
+
+4. List of algorithm growth rates
+	
+	A) Mega Quick Growth (O(n!)
+	B) Exponential Growth Rate
+	C) Quadratic Growth Rate
+	D) Log-Linear Growth Rate
+	E) Linear Growth Rate
+	F) Logarithmic Growth Rate
+	G) Constant Growth Rate
+
+5. Linear growth rate real-life situation
+
+	A train is going to germany there are 240 boarding passengers, the station had to sell 240 tickets. One ticket for each passenger boarding the train.
+
+6. Determine time complexity of this code: O(n)
+
+FUNCTION linearSearch(array, target)
+ FOR each number in the array
+   IF number = target THEN
+     RETURN true
+   END IF
+ END FOR
+ RETURN false
+END FUNCTION 
+
+7. Determine time complexity of this code: O(log n)
+
+FUNCTION foo(array)
+ FOR each number in the array
+   FOR each number in the array
+     print "Hello"
+   END FOR
+ END FOR
+END FUNCTION
+
+8. Determine time complexity of this code: O(2^n)
+
+FUNCTION fibonacci(number)
+ IF number < 1 THEN
+   ERROR
+ ELSE IF number = 1 or 2 THEN
+   RETURN 1
+ ELSE
+   CALL fibonacci WITH number - 2 RETURNING twoBack
+   CALL fibonacci WITH number - 1 RETURNING oneBack
+   RETURN twoBack + oneBack
+ END IF
+END FUNCTION
+
+9. O(2^n)
