@@ -1,0 +1,48 @@
+1. Bubble Sort Pseudocode
+FUNCTION bubbleSort(collection)
+  REPEAT
+    SET swapped to false
+		
+    FOR i = FIRST INDEX of colleciton to LAST INDEX of collection - 1
+      IF collection[i] > collection[i + 1] THEN
+         SET tmp to collection[i]
+         SET collection[i] to collection[i + 1]
+         SET collection[i + 1] to tmp
+         SET swapped to true
+      END IF
+    END FOR
+  UNTIL swapped is FALSE
+
+  RETURN collection	
+END FUNCTION
+
+2. Quick Sort Pseudocode
+FUNCTION partitionFunc(left, right, pivot)
+  SET leftPointer to left
+  SET rightPointer to right - 1
+
+  WHILE true DO
+    WHILE A[++leftPointer] < pivot DO
+      //nothing
+    END WHILE
+
+    WHILE rightPointer > 0 && A[--rightPointer] > pivot DO
+      //nothing
+    END WHILE
+
+    IF leftPointer >= rightPointer
+      break
+    ELSE
+      swap leftPointer, rightPointer
+    END IF
+
+  END WHILE
+
+  swap leftPointer, right
+  RETURN leftPointer
+
+END FUNCTION
+
+3. The reason why they are both very efficient is that they use the O(n*log(n)) time efficiency which is considered the fastest among most of the sorting algorithms and that makes it very efficient when sorting through collections and larger databases and such. They both have good efficiency because merge sort breaks it into smaller pieces and puts everything together which will be good if you have a large collection and quick sort picks a pivot point and compares each item to the pivot point and repeats. Other ones take longer times because they either go through many iterations which takes a lot of time.
+
+4. Bucket sort: Bucket sort works by distributing the elements of an array into a number of buckets. Each bucket is then sorted individually, either using a different sorting algorithm, or by recursively applying the bucket sorting algorithm. It is a distribution sort. It's ideal input would be when intergers or whatever are well dispersed.
