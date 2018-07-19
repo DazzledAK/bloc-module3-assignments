@@ -1,31 +1,26 @@
 1. 
+// A)
+var array = ["Vivian", "Ava", "Josh", "Patrick", "Mike"];
+// B)
+array.push("Mary");
+// C)
+function findJosh() {
+  console.log(array.indexOf("Josh"));
+}
 
-a) SET array ["Vivian", "Ava", "Josh", "Patrick", "Mike"]
-b) array using PUSH on Mary - array.push("Mary");
-c) FUNCTION findJosh
-	CALL array with indexOf and string Josh as a parameter
-END FUNCTION
-d) FUNCTION findEmily
-	CALL array with indexOf and string Emily inside
-END FUNCTION
+findJosh(); // Returns 2
+// D)
+function findEmily() {
+  console.log(array.indexOf("Emily"));
+}
 
-It returns -1 if it doesn't find the item/person in the array.
-
-e) You would just do this:
-
-Splice onto array and 1(As 1 is where Ava is) to 0 then add "Melissa"
-
-Code looks like this: 
-
-var array = ["Vivian", "Ava", "Josh", "Patrick", "Mike"]
-array.splice(1, 0, "Melissa")
-console.log(array)
-
-f) Splice array with 4 to 1
-
-Like so:
-
-array.splice(4, 1)
+findEmily(); // Returns -1 because Emily wasn't found
+// E)
+array.splice(1, 0, "Melissa");
+console.log(array);
+// F)
+array.splice(4,1);
+console.log(array);
 
 2. 
 
